@@ -9,29 +9,78 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    border-radius: 10px;  
 }
 
 #cardHeader {
     width: 100%;
     height: 100px;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 
-#triangleTop {
-    transform: skew(10deg);
-    rotate: 10deg;
-    height: 80px;
-    width: 100%;
-    background-color: #000;
+#year {
+    margin: 0px;
+    margin-top: 45px;
 }
-#triangleBottom {
-    transform: skew(10deg);
-    rotate: 10deg;
+
+.cover {
+    transform: skew(8deg);
+    rotate: 8deg;
     height: 80px;
-    width: 100%;
-    background-color: #000;
+    width: 505.5px;
+    background-color: lightgray;
+    position: absolute;
+    left: -0.51%;
+}
+
+#coverTop {
+    top: 15%;
+}
+
+#coverBottom {
+    top: 80%;
+}
+
+#img {
+    width: 500px;
+    height: 520px;
+    background-color: aqua;
+    background-image: url(media/autumn.jpg);
+    position: absolute;
+    top: 20%;
+}
+
+#currentDay {
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.342);
+    backdrop-filter: blur(5px);
+}
+
+#dayNumber {
+    text-align: center;
+    font-size: 120px;
+    margin: 0;
+    margin-top: 50px;
+}
+
+#day {
+    text-align: center;
+}
+
+#cardFooter {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 25px;
+    width: 500px;
 }
