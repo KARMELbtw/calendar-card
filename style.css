@@ -1,8 +1,11 @@
 body {
     font-family: Arial;
+    --main-color: rgb(219, 219, 219);
+    --transparent-color: rgba(204, 204, 204, 0.253);
+    background-color: rgb(180, 180, 180);
 }
 #card {
-    background: lightgray;
+    background: var(--main-color);
     width: 500px;
     height: 800px;
     position: absolute;
@@ -32,7 +35,7 @@ body {
     rotate: 8deg;
     height: 80px;
     width: 505.5px;
-    background-color: lightgray;
+    background-color: var(--main-color);
     position: absolute;
     left: -0.51%;
 }
@@ -48,7 +51,7 @@ body {
 #img {
     width: 500px;
     height: 520px;
-    background-image: url(media/spring.jpg);
+    /* background-image: url(media/autumn.jpg); */
     position: absolute;
     top: 20%;
 }
@@ -61,7 +64,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
-    background-color: rgba(240, 248, 255, 0.342);
+    background-color: var(--transparent-color);
     backdrop-filter: blur(5px);
 }
 
