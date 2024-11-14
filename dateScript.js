@@ -36,7 +36,6 @@ switch (currentDate.getMonth()) {
         img.style.backgroundImage = "url(media/winter.jpg)";
         body.style.setProperty("--main-color", "rgb(161, 227, 231)");
         body.style.setProperty("--transparent-color", "rgba(93, 141, 153, 0.253)");
-        body.style.backgroundColor = "#000000";
         break;
     case 2: case 3: case 4:
         img.style.backgroundImage = "url(media/spring.jpg)";
@@ -67,6 +66,8 @@ if (daysToBirthday === 0) {
     body.style.setProperty("--transparent-color", "rgba(204, 204, 204, 0.253)");
 } else if (daysToBirthday === 1){
     countdown.innerHTML = "Do urodziń został: " + daysToBirthday + " dzień";
+} else if (daysToBirthday < 5){
+    countdown.innerHTML = "Do urodziń zostały: " + daysToBirthday + "dni";
 } else {
     countdown.innerHTML = "Do urodziń zostało: " + daysToBirthday + "dni";
 }
