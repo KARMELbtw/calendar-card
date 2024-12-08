@@ -1,5 +1,5 @@
 let currentDate = new Date();
-let birthdayDate = new Date(2024, 11, 6);
+let birthdayDate = new Date(2024, 10, 11);
 
 let year = document.getElementById('year');
 let img = document.getElementById('img');
